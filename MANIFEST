@@ -30,4 +30,5 @@ xt/author/04_pod_coverage.t
 xt/author/05_kwalitee.t
 xt/author/06_yaml_meta.t
 xt/author/07_portability_files.t
+xt/author/08_synopsis.t
 xt/author/perlcriticrc
