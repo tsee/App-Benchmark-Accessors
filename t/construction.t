@@ -18,6 +18,7 @@ benchmark_diag($iterations, {
     class_accessor_fast_xs     => sub { WithClassAccessorFastXS->new      } ,
     class_accessor_complex     => sub { WithClassAccessorComplex->new     } ,
     class_accessor_constructor => sub { WithClassAccessorConstructor->new } ,
+    class_accessor_classy      => sub { WithClassAccessorClassy->new      } ,
     mojo                       => sub { WithMojo->new                     } ,
     class_methodmaker          => sub { WithClassMethodMaker->new         } ,
     object_tiny                => sub { WithObjectTiny->new               } ,

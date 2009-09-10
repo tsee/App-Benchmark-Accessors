@@ -17,6 +17,7 @@ my $ClassAccessorFast        = WithClassAccessorFast->new;
 my $ClassAccessorFastXS      = WithClassAccessorFastXS->new;
 my $ClassAccessorComplex     = WithClassAccessorComplex->new;
 my $ClassAccessorConstructor = WithClassAccessorConstructor->new;
+my $ClassAccessorClassy      = WithClassAccessorClassy->new;
 my $Mojo                     = WithMojo->new;
 my $ClassMethodMaker         = WithClassMethodMaker->new;
 my $Accessors                = WithAccessors->new;
@@ -40,6 +41,7 @@ benchmark_diag($iterations, {
     class_accessor_fast_xs => sub { $ClassAccessorFastXS->myattr },
     class_accessor_complex => sub { $ClassAccessorComplex->myattr },
     class_accessor_constructor => sub { $ClassAccessorConstructor->myattr },
+    class_accessor_classy => sub { $ClassAccessorClassy->myattr },
     mojo => sub { $Mojo->myattr },
     class_methodmaker => sub { $ClassMethodMaker->myattr },
     object_tiny => sub { $ObjectTiny->myattr },
