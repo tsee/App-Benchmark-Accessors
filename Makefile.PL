@@ -1,13 +1,12 @@
 use inc::Module::Install;
 include 'Module::AutoInstall';
-
 name 'App-Benchmark-Accessors';
 all_from 'lib/App/Benchmark/Accessors.pm';
-
+readme_from_pod;
+readme_markdown_from_pod;
 auto_set_homepage;
 auto_set_bugtracker;
 auto_set_repository;
-
 requires 'App::Benchmark' => '0.02';
 requires 'UNIVERSAL::require';
 requires 'Class::Accessor';
@@ -27,12 +26,11 @@ requires 'accessors';
 requires 'Class::XSAccessor';
 requires 'Class::XSAccessor::Array';
 requires 'Rose::Object';
+
 #requires 'Badger::Class';
 requires 'Rubyish::Attribute';
-
 test_requires 'Test::More' => '0.70';
 extra_tests;
-
 author_requires 'ShipIt';
 author_requires 'ShipIt::Step::DistClean';
 author_requires 'ShipIt::Step::DistTestExtra';
@@ -44,11 +42,11 @@ author_requires 'Test::Pod';
 author_requires 'Test::Spelling';
 author_requires 'Pod::Wordlist::hanekomu';
 author_requires 'Test::Pod::Coverage';
+
 # author_requires 'Test::Kwalitee';   # Attempt to free unreferenced scalar
 author_requires 'Test::YAML::Meta';
 author_requires 'Test::Portability::Files';
 author_requires 'Test::Synopsis';
-
 auto_install;
 auto_include;
 WriteAll;

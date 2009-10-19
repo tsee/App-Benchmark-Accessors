@@ -1,11 +1,9 @@
 package App::Benchmark::Accessors;
-
+use 5.006;
 use strict;
 use warnings;
-use 5.006;
-
 our $VERSION = '0.07';
-
+#<<<
 package    # hide from PAUSE
   WithMoose;
 use Moose;
@@ -147,11 +145,8 @@ use Rubyish::Attribute;
 sub new { bless {}, shift }
 
 attr_accessor "myattr";
-
-
+#>>>
 1;
-
-
 __END__
 
 =head1 NAME
@@ -238,7 +233,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/App-Benchmark-Accessors/>.
 
 =head1 AUTHORS
 

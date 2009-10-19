@@ -1,14 +1,11 @@
 #!/usr/bin/env perl
-
 use warnings;
 use strict;
 use CPAN;
-
 while (<DATA>) {
     chomp;
     CPAN::Shell->install($_);
 }
-
 __DATA__
 Class::Accessor
 Class::Accessor::Complex
