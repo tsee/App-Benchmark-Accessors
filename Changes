@@ -1,4 +1,7 @@
-Revision history for Perl extension App-Benchmark-Accessors
+Revision history for Perl extension {{$dist->name}}
+
+{{$NEXT}}
+    - converted the distribution to Dist::Zilla-style
 
 0.07 Thu Sep 10 12:20:39 MSZ 2009 (Marcel Gruenauer <marcel@cpan.org>)
      - added Class::Accessor::Classy tests (thanks Eric Wilhelm)
