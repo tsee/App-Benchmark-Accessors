@@ -30,27 +30,27 @@ __PACKAGE__->meta->make_immutable;
 
 package    # hide from PAUSE
   WithClassAccessor;
-use base qw(Class::Accessor);
+use parent qw(Class::Accessor);
 __PACKAGE__->mk_accessors(qw/myattr/);
 
 package    # hide from PAUSE
   WithClassAccessorFast;
-use base qw(Class::Accessor::Fast);
+use parent qw(Class::Accessor::Fast);
 __PACKAGE__->mk_accessors(qw/myattr/);
 
 package    # hide from PAUSE
   WithClassAccessorFastXS;
-use base qw(Class::Accessor::Fast::XS);
+use parent qw(Class::Accessor::Fast::XS);
 __PACKAGE__->mk_accessors(qw/myattr/);
 
 package    # hide from PAUSE
   WithClassAccessorComplex;
-use base qw(Class::Accessor::Complex);
+use parent qw(Class::Accessor::Complex);
 __PACKAGE__->mk_new->mk_scalar_accessors(qw/myattr/);
 
 package    # hide from PAUSE
   WithClassAccessorConstructor;
-use base qw(Class::Accessor::Constructor Class::Accessor::Complex);
+use parent qw(Class::Accessor::Constructor Class::Accessor::Complex);
 __PACKAGE__->mk_constructor->mk_scalar_accessors(qw/myattr/);
 
 package    # hide from PAUSE
@@ -62,7 +62,7 @@ no  Class::Accessor::Classy;
 
 package    # hide from PAUSE
   WithMojo;
-use base qw(Mojo::Base);
+use parent qw(Mojo::Base);
 __PACKAGE__->attr('myattr');
 
 package    # hide from PAUSE
@@ -115,7 +115,7 @@ use Class::XSAccessor accessors => { myattr => 'myattr' }, replace => 1;
 
 package    # hide from PAUSE
   WithRose;
-use base qw(Rose::Object);
+use parent qw(Rose::Object);
 use Rose::Object::MakeMethods::Generic(scalar => 'myattr');
 
 #package    # hide from PAUSE

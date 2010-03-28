@@ -2,34 +2,35 @@ Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
     - converted the distribution to Dist::Zilla-style
+    - use parent instead of use base
 
 0.07 Thu Sep 10 12:20:39 MSZ 2009 (Marcel Gruenauer <marcel@cpan.org>)
-     - added Class::Accessor::Classy tests (thanks Eric Wilhelm)
-     - repo structure and auxiliary files maintenance
+    - added Class::Accessor::Classy tests (thanks Eric Wilhelm)
+    - repo structure and auxiliary files maintenance
 
 0.06 Mon Feb 16 12:55:35 CET 2009 (Marcel Gruenauer <marcel@cpan.org>)
-     - added 'Mouse immutable' tests (thanks dann)
+    - added 'Mouse immutable' tests (thanks dann)
 
 0.05 Sun Feb 15 22:49:40 CET 2009 (Marcel Gruenauer <marcel@cpan.org>)
-     - updated to new Rubyish::Attribute API
-     - added util/app-benchmark-accessors-upgrade.pl
-     - added more author tests
+    - updated to new Rubyish::Attribute API
+    - added util/app-benchmark-accessors-upgrade.pl
+    - added more author tests
 
 0.04  Mon Nov 17 10:32:33 CET 2008 (Marcel Gruenauer <marcel@cpan.org>)
-     - added Badger::Class to the benchmarks (thanks Andy Wardley) - but
-       disabled them for now because Badger dies
-     - added Rubyish::Attribute to the benchmarks (thanks gugod)
-     - simplified t/construction.t to just construct objects, no accessor
-       initialization
+    - added Badger::Class to the benchmarks (thanks Andy Wardley) - but
+      disabled them for now because Badger dies
+    - added Rubyish::Attribute to the benchmarks (thanks gugod)
+    - simplified t/construction.t to just construct objects, no accessor
+      initialization
 
 0.03  Tue Nov  4 18:09:07 CET 2008 (Marcel Gruenauer <marcel@cpan.org>)
-     - added Rose::Object to the benchmarks (thanks John Siracusa)
+    - added Rose::Object to the benchmarks (thanks John Siracusa)
 
 0.02  Sun Nov  2 23:57:27 CET 2008 (Marcel Gruenauer <marcel@cpan.org>)
-     - hidden the helper packages from the PAUSE indexer
-     - t/versions.t now also prints to STDERR
-     - added benchmarks for Class::XSAccessor and a combination of Object::Tiny
-       and Class::XSAccessor (thanks Steffen Mueller)
+    - hidden the helper packages from the PAUSE indexer
+    - t/versions.t now also prints to STDERR
+    - added benchmarks for Class::XSAccessor and a combination of Object::Tiny
+      and Class::XSAccessor (thanks Steffen Mueller)
 
 0.01  Sun Nov  2 17:31:18 CET 2008 (Marcel Gruenauer <marcel@cpan.org>)
-     - original version
+    - original version
