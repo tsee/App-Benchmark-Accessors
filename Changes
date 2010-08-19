@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.102310  2010-08-19 10:43:45 Europe/Vienna
     - re-release (no new features) to trigger reports with fixed App::Benchmark
 
 1.100870  2010-03-28 11:01:32 Europe/Vienna
