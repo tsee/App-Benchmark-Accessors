@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - re-release (no new features) to trigger reports with fixed App::Benchmark
 
 1.100870  2010-03-28 11:01:32 Europe/Vienna
     - converted the distribution to Dist::Zilla-style
