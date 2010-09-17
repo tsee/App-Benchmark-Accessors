@@ -12,6 +12,7 @@ my $MouseImmutable           = WithMouseImmutable->new;
 my $ClassAccessor            = WithClassAccessor->new;
 my $ClassAccessorFast        = WithClassAccessorFast->new;
 my $ClassAccessorFastXS      = WithClassAccessorFastXS->new;
+my $ClassXSAccessorCompat    = WithClassXSAccessorCompat->new;
 my $ClassAccessorComplex     = WithClassAccessorComplex->new;
 my $ClassAccessorConstructor = WithClassAccessorConstructor->new;
 my $ClassAccessorClassy      = WithClassAccessorClassy->new;
@@ -36,6 +37,8 @@ benchmark_diag(
         class_accessor         => sub { $ClassAccessor->myattr(27) },
         class_accessor_fast    => sub { $ClassAccessorFast->myattr(27) },
         class_accessor_fast_xs => sub { $ClassAccessorFastXS->myattr(27) },
+        class_xsaccessor_compat =>
+          sub { $ClassXSAccessorCompat->myattr(27) },
         class_accessor_complex => sub { $ClassAccessorComplex->myattr(27) },
         class_accessor_constructor =>
           sub { $ClassAccessorConstructor->myattr(27) },

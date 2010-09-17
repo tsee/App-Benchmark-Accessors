@@ -44,6 +44,11 @@ use parent qw(Class::Accessor::Fast::XS);
 __PACKAGE__->mk_accessors(qw/myattr/);
 
 package    # hide from PAUSE
+  WithClassXSAccessorCompat;
+use parent qw(Class::XSAccessor::Compat);
+__PACKAGE__->mk_accessors(qw/myattr/);
+
+package    # hide from PAUSE
   WithClassAccessorComplex;
 use parent qw(Class::Accessor::Complex);
 __PACKAGE__->mk_new->mk_scalar_accessors(qw/myattr/);
@@ -149,6 +154,8 @@ following generators are being benchmarked:
 =item Class::Accessor::Fast
 
 =item Class::Accessor::Fast::XS
+
+=item Class::XSAccessor::Compat
 
 =item Class::Accessor::Complex
 
